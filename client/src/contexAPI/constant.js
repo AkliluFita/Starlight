@@ -1,0 +1,14 @@
+// CART CONSTANT
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVE_FORM_CART = "REMOVE_FORM_CART";
+export const REMOVE_ALL_CART = "REMOVE_ALL_CART";
+
+// AUTH CONSTANT
+export const LOGIN_START = "LOGIN_START";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGIN_FAILURE = "LOGIN_FAILURE";
+export const LOGOUT = "LOGOUT";
+
+//ORDER CONSTANT
+export const CREATE_ORDER = "CREATE_ORDER";
+export const GET_ALL_ORDERS = "GET_ALL_ORDERS";

@@ -1,0 +1,194 @@
+.HeaderSlideA {
+  /* margin-top: 100px; */
+  width: 100%;
+  height: 800px;
+  /* border: 1px solid black; */
+}
+.banner1,
+.banner2,
+.banner3,
+.banner4 {
+  width: 100%;
+  margin-top: 180px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.slideImg {
+  width: 110%;
+  height: 800px;
+  object-fit: cover;
+  animation: zoom-out 12s linear infinite;
+  /* border: 1px solid black; */
+}
+
+.text-box {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  left: 5%;
+  color: white;
+  animation: textUp 12s linear infinite;
+}
+
+.headerText {
+  background-color: rgb(82, 82, 202);
+  word-spacing: 7px;
+  color: white;
+  line-height: 20px;
+  padding: 10px;
+}
+
+@keyframes textUp {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(50px);
+  }
+
+  100% {
+    transform: translateY(100px);
+  }
+  150% {
+    transform: translateY(150px);
+  }
+}
+.descPro {
+  width: 600px;
+  height: 300px;
+  opacity: 0.8;
+  background-color: rgb(226, 220, 209);
+  padding: 20px;
+  position: absolute;
+  color: blue;
+  left: 0;
+}
+
+.slide1 {
+  animation: fade1 12s linear infinite;
+}
+
+.slide2 {
+  animation: fade2 12s linear infinite;
+}
+
+.slide3 {
+  animation: fade3 12s linear infinite;
+}
+
+.slide4 {
+  animation: fade4 12s linear infinite;
+}
+
+@keyframes fade1 {
+  0% {
+    visibility: visible;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}
+
+@keyframes fade2 {
+  0% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: visible;
+  }
+
+  75% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fade3 {
+  0% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes fade4 {
+  0% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: hidden;
+  }
+  50% {
+    visibility: hidden;
+  }
+
+  75% {
+    visibility: visible;
+  }
+
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes zoom-out {
+  100% {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .HeaderSlideA {
+    width: "100px";
+    margin-top: 100px;
+  }
+
+  .slideImg {
+    width: 100%;
+    animation: none;
+    margin-top: 100px;
+    height: 600px;
+  }
+
+  .descPro {
+    width: 450px;
+  }
+}
